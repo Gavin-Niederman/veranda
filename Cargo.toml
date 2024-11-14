@@ -1,0 +1,14 @@
+[package]
+name = "vexide-rand"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ahash = { version = "0.8.11", default-features = false }
+rand = { version = "0.8.5", default-features = false }
+vex-sdk = "0.24.1"
+vexide-core = "0.5.0-rc.2"
+vexide-devices = "0.5.0-rc.2"
+
+[dev-dependencies]
+vexide = "0.5.0-rc.2"

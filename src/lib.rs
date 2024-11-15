@@ -1,3 +1,10 @@
+//! # Veranda
+//!
+//! A [`rand`](https://crates.io/crates/rand) RNG source for [vexide](https://vexide.dev) programs.
+//!
+//! Veranda uses system metrics like brain uptime, program uptime, battery current and voltage, and, optionally, empty ADI ports.
+
+
 #![no_std]
 
 use core::hash::{BuildHasher, BuildHasherDefault, Hasher};

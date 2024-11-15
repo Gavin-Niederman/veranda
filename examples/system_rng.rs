@@ -5,7 +5,7 @@ use core::time::Duration;
 
 use rand::RngCore;
 use vexide::prelude::*;
-use vexide_rand::SystemRng;
+use veranda::SystemRng;
 
 #[vexide::main]
 async fn main(_: Peripherals) {

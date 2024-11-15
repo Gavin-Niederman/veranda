@@ -345,6 +345,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e91b56cd4cadaeb79bbf1a5645f6b4f8dc5bde8834ad5894a8db35fda9efa1fe"
 
 [[package]]
+name = "veranda"
+version = "0.1.0"
+dependencies = [
+ "ahash",
+ "rand",
+ "vex-sdk 0.24.1",
+ "vexide",
+ "vexide-core",
+ "vexide-devices",
+]
+
+[[package]]
 name = "version_check"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -459,18 +471,6 @@ checksum = "2e632954901a80b875981668939a57d486253b8da96a6653194e3b3b51a90277"
 dependencies = [
  "snafu",
  "vex-sdk 0.23.0",
- "vexide-core",
- "vexide-devices",
-]
-
-[[package]]
-name = "vexide-rand"
-version = "0.1.0"
-dependencies = [
- "ahash",
- "rand",
- "vex-sdk 0.24.1",
- "vexide",
  "vexide-core",
  "vexide-devices",
 ]

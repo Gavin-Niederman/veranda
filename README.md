@@ -4,7 +4,7 @@ A [`rand`](https://crates.io/crates/rand) RNG source for [vexide](https://vexide
 
 Veranda uses system metrics like brain uptime, program uptime, battery current and voltage, and, optionally, empty ADI ports.
 
-> [NOTE]
+> [!NOTE]
 > Veranda is not upheld to the same update schedule as vexide, as it is not an official vexide crate.
 
 # Usage

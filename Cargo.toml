@@ -1,12 +1,15 @@
 [package]
 name = "veranda"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 description = "A rand RNG source for vexide."
 keywords = ["vexide", "rand", "random", "vex", "v5"]
 categories = ["no-std", "science::robotics"]
 repository = "https://github.com/Gavin-Niederman/veranda"
+
+[package.metadata.docs.rs]
+targets = ["armv7a-none-eabi"]
 
 [dependencies]
 ahash = { version = "0.8.11", default-features = false }

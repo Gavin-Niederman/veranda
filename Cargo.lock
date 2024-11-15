@@ -346,11 +346,11 @@ checksum = "e91b56cd4cadaeb79bbf1a5645f6b4f8dc5bde8834ad5894a8db35fda9efa1fe"
 
 [[package]]
 name = "veranda"
-version = "0.1.2"
+version = "0.1.3"
 dependencies = [
  "ahash",
  "rand",
- "vex-sdk 0.24.1",
+ "vex-sdk",
  "vexide",
  "vexide-core",
  "vexide-devices",
@@ -385,18 +385,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cddff1d9785c5e35e031340c0a24afbeb911a654f99fec062c5ec94281c189ed"
 
 [[package]]
-name = "vex-sdk"
-version = "0.24.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "33cd013df0df6c13893b0e567189a870263a7866429df6fa1097a89c23bb3db9"
-
-[[package]]
 name = "vexide"
 version = "0.5.0-rc.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fdc23f100f3fb276cb2956fe5721c759125a97c948df0f57bce4fb8ee31e0a34"
 dependencies = [
- "vex-sdk 0.23.0",
+ "vex-sdk",
  "vexide-async",
  "vexide-core",
  "vexide-devices",
@@ -412,7 +406,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "65ef1b4261a210ca16f5e814a4d9d5c37a1a99eee09384481da0a43728807f19"
 dependencies = [
  "async-task",
- "vex-sdk 0.23.0",
+ "vex-sdk",
  "vexide-core",
  "waker-fn",
 ]
@@ -434,7 +428,7 @@ dependencies = [
  "snafu",
  "talc",
  "vex-libunwind",
- "vex-sdk 0.23.0",
+ "vex-sdk",
 ]
 
 [[package]]
@@ -448,7 +442,7 @@ dependencies = [
  "no_std_io",
  "rgb",
  "snafu",
- "vex-sdk 0.23.0",
+ "vex-sdk",
  "vexide-core",
 ]
 
@@ -470,7 +464,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2e632954901a80b875981668939a57d486253b8da96a6653194e3b3b51a90277"
 dependencies = [
  "snafu",
- "vex-sdk 0.23.0",
+ "vex-sdk",
  "vexide-core",
  "vexide-devices",
 ]
@@ -483,7 +477,7 @@ checksum = "7a9b1b3cbe1394704e68354c68bf77ff5bf632fe0a3e16d301698ccb4c92211e"
 dependencies = [
  "bitflags",
  "compile-time",
- "vex-sdk 0.23.0",
+ "vex-sdk",
  "vexide-core",
 ]
 

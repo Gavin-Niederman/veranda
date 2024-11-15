@@ -2,7 +2,7 @@
 name = "veranda"
 version = "0.1.0"
 edition = "2021"
-liscence = "MIT"
+license = "MIT"
 description = "A rand RNG source for vexide."
 keywords = ["vexide", "rand", "random", "vex", "v5"]
 categories = ["no-std", "science::robotics"]

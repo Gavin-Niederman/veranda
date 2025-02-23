@@ -4,13 +4,12 @@
 //!
 //! Veranda uses system metrics like brain uptime, program uptime, battery current and voltage, and, optionally, empty ADI ports.
 
-
 #![no_std]
 
 use core::hash::{BuildHasher, BuildHasherDefault, Hasher};
 
 use ahash::AHasher;
-use rand::{Error, RngCore};
+use rand::RngCore;
 use vex_sdk::{vexDeviceAdiValueGet, vexDeviceGetByIndex, vexSystemPowerupTimeGet};
 use vexide_core::time::Instant;
 use vexide_devices::{adi::AdiPort, battery};

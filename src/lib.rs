@@ -82,11 +82,6 @@ impl RngCore for SystemRng {
             })
             .count();
     }
-
-    fn try_fill_bytes(&mut self, dest: &mut [u8]) -> Result<(), Error> {
-        self.fill_bytes(dest);
-        Ok(())
-    }
 }
 
 /// A [`rand`](https://crates.io/crates/rand) RNG source that includes empty ADI port(s) as a source of entropy.
@@ -165,10 +160,5 @@ impl RngCore for AdiRng<'_> {
                 chunk.copy_from_slice(&value.to_le_bytes()[..len]);
             })
             .count();
-    }
-
-    fn try_fill_bytes(&mut self, dest: &mut [u8]) -> Result<(), Error> {
-        self.fill_bytes(dest);
-        Ok(())
     }
 }

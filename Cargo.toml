@@ -1,6 +1,6 @@
 [package]
 name = "veranda"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2021"
 license = "MIT"
 description = "A rand RNG source for vexide."
@@ -15,8 +15,8 @@ targets = ["armv7a-none-eabi"]
 ahash = { version = "0.8.11", default-features = false }
 rand = { version = "0.9.0", default-features = false }
 vex-sdk = "0.26.0"
-vexide-core = "0.6.0"
-vexide-devices = "0.6.0"
+vexide-core = { version = "0.7.0", default-features = false }
+vexide-devices = "0.7.0"
 
 [dev-dependencies]
-vexide = "0.6.1"
+vexide = "0.7.0"
